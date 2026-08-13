@@ -1,36 +1,36 @@
-# Joy-Con Web Input Demo
+# Joy-Con Web入力デモ
 
 Joy-Conの傾きや動きをWeb画面にリアルタイム反映する技術デモです。
 
 VCL本体のチーム開発コードは公開せず、外部デバイス入力をWebアプリに接続する考え方だけを小さく再構成する想定です。
 
-![Joy-Con input reflected in VCL UI](assets/joycon-experience-ui.png)
+![Joy-Con入力を反映したVCL画面](assets/joycon-experience-ui.png)
 
-## Purpose
+## 目的
 
 このデモの目的は、Joy-Conの入力をNode.js側で取得し、Socket.IOでフロントエンドへ送信し、Web画面上の表示に反映する流れを示すことです。
 
 VCLでは、この仕組みを使って試験管やフラスコを傾ける操作に応用しました。
 
-## Architecture
+## 構成
 
 ```mermaid
 flowchart LR
   A[Joy-Con] --> B[Node.js]
   B --> C[Socket.IO]
-  C --> D[Browser]
-  D --> E[UI or 3D Object]
+  C --> D[ブラウザ]
+  D --> E[UIまたは3Dオブジェクト]
 ```
 
-## Tech Stack
+## 使用技術
 
 - Node.js
 - Socket.IO
 - JavaScript
 - HTML / CSS
-- Three.js or Canvas
+- Three.js または Canvas
 
-## What This Demo Shows
+## このデモで示すこと
 
 - Joy-Conの入力を取得する
 - 取得した値を補正する
@@ -38,13 +38,13 @@ flowchart LR
 - Socket.IOでリアルタイムに送る
 - フロントエンドで受け取り、画面上のオブジェクトを動かす
 
-## Relation to VCL
+## VCLとの関係
 
 VCLでは、Joy-Conを試験管やフラスコのように扱い、傾ける、振る、混ぜるという操作をWeb上の実験体験に反映しました。
 
 このデモでは、チーム開発本体のコードではなく、その中で使った技術要素を公開可能な範囲で小さく再現します。
 
-## Roadmap
+## 今後やること
 
 - 最小構成のNode.jsサーバーを作る
 - Socket.IOでブラウザへ値を送る
