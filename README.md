@@ -1,4 +1,4 @@
-# Joy-Con Web入力デモ
+# Joy-ConでWeb画面を動かす検証
 
 Joy-Conの傾きや動きをWeb画面にリアルタイム反映する技術デモです。
 
@@ -30,7 +30,7 @@ flowchart LR
 - HTML / CSS
 - Three.js または Canvas
 
-## このデモで示すこと
+## 検証したいこと
 
 - Joy-Conの入力を取得する
 - 取得した値を補正する
