@@ -4,6 +4,8 @@ Joy-Conの傾きや動きをWeb画面にリアルタイム反映する技術デ�
 
 VCL本体のチーム開発コードは公開せず、外部デバイス入力をWebアプリに接続する考え方だけを小さく再構成する想定です。
 
+![Joy-Con input reflected in VCL UI](assets/joycon-experience-ui.png)
+
 ## Purpose
 
 このデモの目的は、Joy-Conの入力をNode.js側で取得し、Socket.IOでフロントエンドへ送信し、Web画面上の表示に反映する流れを示すことです。
@@ -47,4 +49,4 @@ VCLでは、Joy-Conを試験管やフラスコのように扱い、傾ける、�
 - 最小構成のNode.jsサーバーを作る
 - Socket.IOでブラウザへ値を送る
 - 画面上のオブジェクトを傾きに合わせて動かす
-- 起動方法とスクリーンショットを追加する
+- 起動方法を追加する
